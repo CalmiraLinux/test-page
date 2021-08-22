@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Скачать Calmira | Calmira download</title>
-	<link rel="stylesheet" href="css/page/styles.css" type="text/css">
+	<link rel="stylesheet" href="../css/page/styles.css" type="text/css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,7 +17,7 @@
 		</header>
 		<nav>
 			<ul class="top-menu">
-				<li><a href="index.html">Домашняя страница</a></li>
+				<li><a href="../index.html">Домашняя страница</a></li>
 				<li><a href="/test-page/docs/about.html">О дистрибутиве</a></li>
 				<li class="active">Скачать</li>
 				<li><a href="/test-page/docs/index.html">Документация</a></li>
@@ -25,12 +25,12 @@
 			</ul>
 		</nav>
 		<div id="heading">
-			<h1>Скачать Calmira</h1>
+			<h1>Calmira 2021.2 Andromeda With Xorg support - Xorg</h1>
 		</div>
 		<aside>
 			<nav>
 				<ul class="aside-menu">
-					<li><a href="index.html">Дом. страница</a></li>
+					<li><a href="../index.html">Дом. страница</a></li>
 					<li><a href="/test-page/docs/about.html#started">Причины появления дистрибутива</a></li>
 					<li><a href="/test-page/docs/about.html#positioning">Позиционирование</a></li>
 					<li><a href="/test-page/docs/about.html#updates">Обновления</a></li>
@@ -42,84 +42,37 @@
 		</aside>
 
 		<section>
-			<p>В данном разделе приведены ссылки для скачивания <em>стабильных</em> релизов Calmira GNU/Linux. Тестовые релизы сюда никогда не выкладываются.</p>
-
-			<h2>Релизы с неистёкшей поддержкой</h2>
-			<p>Поддержка этих релизов всё ещё осуществляется. На текущий момент они предоставляют актуальный набор ПО. Вы можете отсылать баг-репорты, если в какой-то из поддерживаемой версии нашли ошибку или недоработку.</p>
-
 			<table class="table">
 				<thead>
 					<tr>
 						<th style="text-align: left;">Релиз</th>
+						<th style="text-align: left;">Дата выхода</th>
 						<th style="text-align: left;">Дата окончания поддержки</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<a href="distros/lx10.html">Calmira LX4 1.0 Orion</a>
+							<a href="https://github.com/CalmiraLinux/CalmiraLinux/releases/download/2021.2.2/Calmira_2021.2.2_build1_with_xorg.sqsh">Calmira 2021.2 Andromeda with Xorg Support - Xorg</a>
 						</td>
 						<td>
-							10.04.2022
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="distros/Base.html">Calmira 2021.2.2 Andromeda with Xorg Support - Base</a>
+							04.06.2021
 						</td>
 						<td>
 							10.03.2022
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="distros/Xorg.html">Calmira 2021.2.2 Andromeda with Xorg Support - Xorg</a>
-						</td>
-						<td>
-							10.03.2022
-						</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<h2>Устаревшие версии, поддержка которых не предоставляется</h2>
-			<p>Это устаревшие дистрибутивы со старыми версиями ПО, без обновлений и многих возможностей современных дистрибутивов. В них много багов и недоработок.</p>
-
-			<table class="table">
-				<thead>
-					<tr>
-						<th style="text-align: left;">Релиз</th>
-						<th style="text-align: left;">Дата окончания поддержки</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<a href="distros/c2021.2.2.html">Calmira 2021.2 Andromeda (Build 2)</a>
-						</td>
-						<td>
-							10.07.2021
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="distros/c2021.2.1.html">Calmira 2021.2 Andromeda (Build 1)</a>
-						</td>
-						<td>
-							10.07.2021
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Calmira 2021.1 Orion Build 1 (ссылка утеряна)
-						</td>
-						<td>
-							01.06.2021
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			
+			<h2 id="changelog">Список изменений</h2>
+			<p>
+				<ul>
+					<li>Обновление пакетного менеджера <tt>cpkg</tt> - добавлена возможность компиляции пакета из исходных кодов по инструкции из файла port.sh пакета (<b>работает нестабильно</b>, используйте с осторожностью!);</li>
+					<li>Скомпилирован Xorg, в качестве опционального пакета представлен оконный менеджер Fluxbox (см. <tt>/usr/pkg</tt>).</li>
+				</ul>
+			</p>
+
 			<h2 id="системные-требования">Системные требования</h2>
 
 			<h3 id="минимальные">Минимальные</h3>
@@ -142,7 +95,7 @@
 			    </tr>
 			    <tr>
 			      <td style="text-align: left">Место на жёстком диске</td>
-			      <td style="text-align: left">1.5 Гб</td>
+			      <td style="text-align: left">1.3 Гб</td>
 			    </tr>
 			  </tbody>
 			</table>
@@ -163,7 +116,7 @@
 			    </tr>
 			    <tr>
 			      <td style="text-align: left">ЦП</td>
-			      <td style="text-align: left">Uknown Intel x86_64 &gt;= 1 ГГц</td>
+			      <td style="text-align: left">Uknown Intel x86_64 &gt;= 900 МГц</td>
 			    </tr>
 			    <tr>
 			      <td style="text-align: left">Место на жёстком диске</td>
