@@ -240,3 +240,9 @@ td,th {
 .table tbody tr td:last-child {
 	border-radius: 0 8px 8px 0;
 }
+
+kbd {
+	background: #ccc;
+	border-radius: 3px;
+	padding: 0 4px;
+}
